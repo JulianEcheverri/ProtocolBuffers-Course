@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message Person {
+    int32 age = 1;
+    string first_name =2;
+    string last_name = 3;
+    bytes small_picture = 4;
+    bool is_profile_verified = 5;
+    float height = 6;
+
+    // Repeated Fields
+    // To make a list or an array, you can use he concept of repeated fields
+    // The list can take any number (0 or more) of elements you want
+    // The opposite of repeated is singular (we dont't write it)
+    repeated string phone_numbers = 7;
+}
